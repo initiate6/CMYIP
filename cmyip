@@ -1,0 +1,3 @@
+#!/bin/bash
+ip_addr=`curl -s http://cmyip.com | w3m -T text/html -dump | grep -o -E '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}'`
+echo $ip_addr
